@@ -45,13 +45,18 @@
 <pre><code class="html">&lt;h1&gt;Intro to &lt;?php echo "PHP"; ?&gt;&lt;/h1&gt;</code></pre>
                 </section>
                 <section data-background="#fff">
-                    <h2>Agenda</h2>
+                    <h2>Open the deck</h2>
+                    <p><a href="http://adrien.eudes.co/php-pres/">adrien.eudes.co/php-pres</a></p>
+                </section>
+                <section data-background="#fff">
+                    <h2>You will learn</h2>
                     <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>What PHP is</li>
+                        <li>How a browser is communicating with a server</li>
+                        <li>How to create a PHP environment</li>
+                        <li>What is an algorithm</li>
+                        <li>How to build sripts and functions in PHP</li>
+                        <li>How to serve a web page via PHP</li>
                     </ul>
                 </section>
             </section>
@@ -150,25 +155,25 @@
                 </section>
                 <section data-background="#fff">
                     <h2>A server</h2>
-                    <img src="https://www.dropbox.com/s/cyghuwpfisbezxd/Screenshot%202016-02-16%2010.19.22.png?dl=1" alt="">
+                    <img src="images/server.png" alt="">
                 </section>
                 <section data-background="#fff">
                     <h2>From your laptop!</h2>
-                    <img src="https://www.dropbox.com/s/4ktnletrhl851xt/Screenshot%202016-02-16%2010.20.09.png?dl=1" alt="">
+                    <img src="images/laptop.png" alt="">
                 </section>
                 <section data-background="#fff">
                     <h2>Or in the cloud</h2>
-                    <img src="https://www.dropbox.com/s/w6e76tr2piwv563/Screenshot%202016-02-16%2010.22.04.png?dl=1" alt="">
+                    <img src="images/cloud.png" alt="">
                     <p><a href="https://c9.io/" target="_blank">Cloud9</a></p>
                 </section>
                 <section data-background="#fff">
                     <h2>Connect</h2>
-                    <img src="https://www.dropbox.com/s/0d9n8f5360okzln/Screenshot%202016-02-16%2010.28.22.png?dl=1" alt="">
+                    <img src="images/connect.png" alt="">
                     <p><a href="https://c9.io/" target="_blank">c9.io</a></p>
                 </section>
                 <section data-background="#fff">
                     <h2>Create a workspace</h2>
-                    <img src="https://www.dropbox.com/s/owc2hoau5ac2xkc/Screenshot%202016-02-16%2010.29.17.png?dl=1" alt="">
+                    <img src="images/workspace.png" alt="">
                 </section>
                 <section data-background="#fff">
                     <h2>Welcome!</h2>
@@ -228,6 +233,44 @@ echo $list['f'];
                     </ul>
                 </section>
                 <section data-background="#fff">
+                    <h2>How to script in PHP</h2>
+                    <h3>The ECHO function</h3>
+                    <ol>
+                        <li>Create a file in your root folder <code>script.php</code></li>
+                        <li>Write an easy code: <code>&lt;?php echo "Hello World"; ?&gt;</code></li>
+                        <li>Save your file!</li>
+                        <li>From the console <code>php script.php</code></li>
+                    </ol>
+                </section>
+                <section data-background="#fff">
+                    <h2>Exercice 1</h2>
+                    <h3>Write your first script</h3>
+                    <p>Write a script to caclculate 13! = factorial(13)</p>
+<pre><code>php factor.php
+6227020800</code></pre>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h2>(Small) intro to algorithmic</h2>
+                </section>
+                <section>
+                    <h2>Question</h2>
+                    <h3>What is an algorithm?</h3>
+                </section>
+                <section>
+                    <h2>Always on paper first</h2>
+<pre><code>X <- "READ FROM INPUT"
+
+IF X < 10
+    THEN echo X
+ELSE IF X < 20
+    THEN echo X * X
+ELSE
+    echo factor(X)
+</code></pre>
+                </section>
+                <section data-background="#fff">
                     <h2>IF</h2>
 <pre><code class="php">&lt;?php
 // $i = 10;
@@ -272,18 +315,20 @@ foreach (/* $array as $element */) {
 ?&gt;</code></pre>
                 </section>
                 <section data-background="#fff">
-                    <h2>How to script in PHP</h2>
+                    <h2>Exercice 2</h2>
+                    <h3>Factorial, again, on paper</h3>
                     <ol>
-                        <li>Create a file in your root folder <code>script.php</code></li>
-                        <li>Write an easy code: <code>&lt;?php echo "Hello World"; ?&gt;</code></li>
-                        <li>Save your file!</li>
-                        <li>From the console <code>php script.php</code></li>
+                        <li>Take a sheet of paper!</li>
+                        <li>Write a script to caclculate 13!, with a loop!</li>
                     </ol>
                 </section>
                 <section data-background="#fff">
-                    <h2>Exercice 1</h2>
-                    <h3>Write your first script</h3>
-                    <p>Write a script to caclculate 13! = factorial(13)</p>
+                    <h2>Exercice 2b</h2>
+                    <h3>Factorial, again, in PHP</h3>
+                    <ol>
+                        <li>Create a new file <code>loop.php</code></li>
+                        <li>Write a script to caclculate 13!, with a loop!</li>
+                    </ol>
 <pre><code>php factor.php
 6227020800</code></pre>
                 </section>
@@ -306,7 +351,7 @@ echo FunctionName(1, 2);
 ?&gt;</code></pre>
                 </section>
                 <section data-background="#fff">
-                    <h2>Exercice 2</h2>
+                    <h2>Exercice 3</h2>
                     <h3>Factorial functions</h3>
                     <p>Create a new file</p>
 <pre><code>php factor_function.php
@@ -341,7 +386,7 @@ echo factorRec(13);
 ?&gt;</code></pre>
                 </section>
                 <section data-background="#fff">
-                    <h2>Exercice 2b</h2>
+                    <h2>Exercice 3b</h2>
                     <h3>Fibonacci function</h3>
                     <p>Create a new file</p>
 <pre><code>php fibo.php
@@ -394,7 +439,7 @@ echo factorRec(13);
                 </section>
                 <section data-background="#fff">
                     <h3>Request sent with a POST form</h3>
-                    <img src="https://www.dropbox.com/s/vw8edx9aeq9z70d/Screenshot%202016-03-03%2014.39.34.png?dl=1" alt="">
+                    <img src="images/request.png" alt="">
                     <p>Good news: this data is fetchable with PHP!</p>
                 </section>
                 <section data-background="#fff">
@@ -429,11 +474,17 @@ echo $_POST["mynumber"];
                     </ol>                 
                 </section>
                 <section data-background="#fff">
-                    <h2>Exercice 3</h2>
+                    <h2>Exercice 4</h2>
                     <p>Update your <code>post.php</code> file to apply the factorial function on the input, and display it</p>
                 </section>
             </section>
-
+            <section>
+                <section>
+                    <h2>Q&A</h2>
+                    <p><a href="mailto:adrien.eudes@sephoradigital.com">adrien.eudes@sephoradigital.com</a></p>
+                </section>
+            </section>
+<!--
             <section>
                 <section data-background="#fff">
                     <h2>Exercice: transform that...</h2>
@@ -477,6 +528,7 @@ echo $_POST["mynumber"];
 &lt;/html&gt;</code></pre>
                 </section>
             </section>
+-->
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js"></script>
